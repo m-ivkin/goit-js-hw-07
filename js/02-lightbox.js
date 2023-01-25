@@ -16,3 +16,9 @@ function createGallery(imagesList) {
 
 const galleryList = createGallery(galleryItems);
 gallery.insertAdjacentHTML('afterbegin', galleryList);
+
+new SimpleLightbox('.gallery__item', {
+  captionsData: 'alt',
+  captionPosition: 'bottom',
+  captionDelay: 250,
+});
